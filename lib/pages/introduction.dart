@@ -4,7 +4,6 @@ import 'package:concentric_transition/concentric_transition.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:lottie/lottie.dart';
-//
 import '../pages/landscape_mode.dart';
 import '../model/introduction_model.dart';
 import '../navigator.dart';
@@ -27,7 +26,7 @@ class IntroductionPage extends StatelessWidget {
             ],
             itemCount: concentrics.length,
             onFinish: () {
-              Get.offAll(()=> const MainNavigator(),
+              Get.offAll(() => const MainNavigator(),
                   transition: Transition.cupertino);
             },
             itemBuilder: (int index, double value) {
@@ -39,7 +38,7 @@ class IntroductionPage extends StatelessWidget {
                       padding: const EdgeInsets.only(top: 20, right: 20),
                       child: GestureDetector(
                         onTap: () {
-                          Get.offAll(()=>const MainNavigator(),
+                          Get.offAll(() => const MainNavigator(),
                               transition: Transition.cupertino);
                         },
                         child: const Text(

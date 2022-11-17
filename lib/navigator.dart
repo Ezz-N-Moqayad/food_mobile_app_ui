@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:line_icons/line_icons.dart';
 import 'package:custom_navigation_bar/custom_navigation_bar.dart';
-
-//
 import '../pages/landscape_mode.dart';
 import '../pages/home.dart';
 import '../pages/profile.dart';
@@ -22,8 +20,6 @@ class MainNavigator extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    
-
     /// Controller
     final _controller = Get.find<NavigatorController>();
     if (MediaQuery.of(context).orientation == Orientation.portrait) {

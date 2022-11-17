@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:line_icons/line_icons.dart';
-//
 import '../controllers/navigator_controllers.dart';
 import '../controllers/food_controller.dart';
 import '../controllers/wallet_controller.dart';
@@ -24,7 +23,6 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    
     return SafeArea(
       child: Scaffold(
         drawer: mainDrawer(3),

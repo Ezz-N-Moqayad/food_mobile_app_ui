@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-//
 import '../model/salads_model.dart';
 
 class WalletController extends GetxController {
@@ -56,9 +55,8 @@ class WalletController extends GetxController {
   double totalAmount() {
     var sumPrice = 0.0;
     for (SaladModel walletFood in walletFood) {
-      sumPrice = sumPrice + walletFood.price; 
+      sumPrice = sumPrice + walletFood.price;
     }
     return sumPrice;
-    
   }
 }

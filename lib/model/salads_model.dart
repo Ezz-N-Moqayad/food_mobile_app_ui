@@ -8,7 +8,6 @@ class SaladModel {
   int quantity;
   String description;
 
-  ///
 
   SaladModel({
     required this.id,
@@ -21,5 +20,3 @@ class SaladModel {
     required this.quantity,
   });
 }
-
-

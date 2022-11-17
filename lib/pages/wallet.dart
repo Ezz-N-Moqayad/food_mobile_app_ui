@@ -4,7 +4,6 @@ import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:line_icons/line_icons.dart';
 import 'package:lottie/lottie.dart';
-//
 import '../controllers/navigator_controllers.dart';
 import '../controllers/wallet_controller.dart';
 import '../utils/constanst.dart';
@@ -14,7 +13,7 @@ class WalletPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  SafeArea(
+    return SafeArea(
       child: Scaffold(
         drawer: mainDrawer(1),
         appBar: const MyAppBar(),
@@ -128,13 +127,15 @@ class MainItem extends StatelessWidget {
                                   right: 0,
                                   child: FadeInLeft(
                                     delay: Duration(
-                                        milliseconds: (index / 0.5 * 100).toInt()),
+                                        milliseconds:
+                                            (index / 0.5 * 100).toInt()),
                                     child: Container(
                                       width: w / 1.3,
                                       height: h / 5.5,
                                       decoration: BoxDecoration(
                                           color: unSelectedColor,
-                                          borderRadius: BorderRadius.circular(100),
+                                          borderRadius:
+                                              BorderRadius.circular(100),
                                           boxShadow: const [
                                             BoxShadow(
                                                 color: Color.fromARGB(
@@ -150,7 +151,8 @@ class MainItem extends StatelessWidget {
                                   bottom: 3,
                                   child: FadeInLeft(
                                     delay: Duration(
-                                        milliseconds: (index / 0.5 * 200).toInt()),
+                                        milliseconds:
+                                            (index / 0.5 * 200).toInt()),
                                     child: Spin(
                                       delay: Duration(
                                           milliseconds:
@@ -162,7 +164,8 @@ class MainItem extends StatelessWidget {
                                           tag: _walletController
                                               .walletFood[index].id,
                                           child: Image.asset(
-                                            _walletController.walletFood[index].img,
+                                            _walletController
+                                                .walletFood[index].img,
                                             fit: BoxFit.cover,
                                           ),
                                         ),
@@ -175,7 +178,8 @@ class MainItem extends StatelessWidget {
                                   top: 40,
                                   child: FadeInLeft(
                                     delay: Duration(
-                                        milliseconds: (index / 0.5 * 300).toInt()),
+                                        milliseconds:
+                                            (index / 0.5 * 300).toInt()),
                                     child: Text(
                                       _walletController.walletFood[index].title,
                                       style: GoogleFonts.oxygen(
@@ -190,9 +194,11 @@ class MainItem extends StatelessWidget {
                                   top: 68,
                                   child: FadeInLeft(
                                     delay: Duration(
-                                        milliseconds: (index / 0.5 * 400).toInt()),
+                                        milliseconds:
+                                            (index / 0.5 * 400).toInt()),
                                     child: Text(
-                                      _walletController.walletFood[index].subtitle,
+                                      _walletController
+                                          .walletFood[index].subtitle,
                                       style: GoogleFonts.oxygen(
                                           color: const Color.fromARGB(
                                               255, 135, 134, 134),
@@ -206,7 +212,8 @@ class MainItem extends StatelessWidget {
                                   top: 95,
                                   child: FadeInLeft(
                                     delay: Duration(
-                                        milliseconds: (index / 0.5 * 500).toInt()),
+                                        milliseconds:
+                                            (index / 0.5 * 500).toInt()),
                                     child: Text(
                                       "\$${_walletController.walletFood[index].price.toStringAsFixed(2)}",
                                       style: GoogleFonts.oxygen(
@@ -236,11 +243,13 @@ class MainItem extends StatelessWidget {
                                                     "Do you really wanna remove this Item from this list?",
                                                     textAlign: TextAlign.center,
                                                   ),
-                                                  confirmTextColor: Colors.white,
+                                                  confirmTextColor:
+                                                      Colors.white,
                                                   onCancel: () {},
                                                   onConfirm: () {
                                                     _walletController
-                                                        .removeSingleItem(index);
+                                                        .removeSingleItem(
+                                                            index);
                                                     Get.back();
                                                   });
                                             },
@@ -340,8 +349,8 @@ class MyAppBar extends StatelessWidget with PreferredSizeWidget {
                       delay: const Duration(milliseconds: 400),
                       child: IconButton(
                           onPressed: () {
-                            Get.find<NavigatorController>().changeNavBarIndex(0);
-                                
+                            Get.find<NavigatorController>()
+                                .changeNavBarIndex(0);
                           },
                           icon: const Icon(
                             LineIcons.plusCircle,

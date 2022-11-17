@@ -2,7 +2,6 @@ import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:lottie/lottie.dart';
-
 import '../utils/constanst.dart';
 
 class LandScape extends StatelessWidget {
@@ -10,7 +9,6 @@ class LandScape extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    
     return SafeArea(
       child: Scaffold(
         body: Column(
@@ -21,7 +19,7 @@ class LandScape extends StatelessWidget {
               delay: const Duration(milliseconds: 500),
               child: Text("Please return your phone to portrait mode",
                   style: GoogleFonts.oxygen(
-                    fontWeight : FontWeight.w400,
+                    fontWeight: FontWeight.w400,
                     fontSize: 33,
                   )),
             )),

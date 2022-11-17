@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
-//
 import '../pages/landscape_mode.dart';
 import '../controllers/splash_controller.dart';
 import '../utils/constanst.dart';

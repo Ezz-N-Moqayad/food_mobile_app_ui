@@ -1,5 +1,4 @@
 import 'package:get/get.dart';
-//
 import '../model/salads_model.dart';
 
 class FoodController extends GetxController {

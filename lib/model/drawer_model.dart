@@ -21,6 +21,4 @@ List<DrawerItemModel> drawerItem = [
   DrawerItemModel(icon: LineIcons.alternateSignIn, title: "Sign Out"),
   DrawerItemModel(icon: LineIcons.shareSquareAlt, title: "Tell a Friend"),
   DrawerItemModel(icon: LineIcons.questionCircle, title: "Help And Feedback"),
-  
-  
 ];

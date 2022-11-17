@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-//
 import '../controllers/drawer_controller.dart';
 import '../controllers/navigator_controllers.dart';
 import '../model/drawer_model.dart';
@@ -100,7 +99,7 @@ Drawer mainDrawer(int index) {
                               Navigator.pop(context);
                               Future.delayed(const Duration(milliseconds: 300),
                                   () {
-                                  return showDialog<void>(
+                                return showDialog<void>(
                                   context: context,
                                   barrierDismissible:
                                       false, // user must tap button!
@@ -138,7 +137,8 @@ Drawer mainDrawer(int index) {
                                             child: const Text(
                                               'Yup',
                                               style: TextStyle(
-                                                  color: Colors.deepPurpleAccent),
+                                                  color:
+                                                      Colors.deepPurpleAccent),
                                             ),
                                             onPressed: () {
                                               SystemNavigator.pop();

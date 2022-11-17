@@ -5,8 +5,6 @@ import 'package:food_mobile_app_ui/controllers/discount_controller.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:line_icons/line_icons.dart';
-
-///
 import '../pages/setting.dart';
 import '../controllers/navigator_controllers.dart';
 import '../controllers/wallet_controller.dart';
